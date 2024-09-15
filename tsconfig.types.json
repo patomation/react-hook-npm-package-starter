@@ -6,7 +6,5 @@
     "sourceMap": true,
     "emitDeclarationOnly": true
   },
-  "include": [
-    "src/index.tsx"
-  ]
+  "include": ["src/index.tsx"]
 }

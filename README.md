@@ -1,22 +1,19 @@
-
 # React NPM Package Starter
 
-
 ## Installation
+
 ```
-yarn add my-component
-```
-or
-```
-npm install my-component --save
+yarn add @patomation/useHook
 ```
 
 ## Usage
 
 ```javascript
-import { MyComponent } from 'my-component'
+import { useHook } from "@patomation/useHook";
 
-<MyComponent>
-  Nice
-</MyComponent>
+const Component = (): React.ReactElement => {
+  const { foo } = useHook();
+
+  return <div>{foo}</div>;
+};
 ```

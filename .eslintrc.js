@@ -1,38 +1,32 @@
-
 module.exports = {
   env: {
     browser: true,
     es6: true,
     jest: true,
-    node: true
+    node: true,
   },
-  extends: [
-    'standard-with-typescript',
-    'plugin:react/recommended'
-  ],
+  extends: ["standard-with-typescript", "plugin:react/recommended"],
   parserOptions: {
-    project: './tsconfig.json',
+    project: "./tsconfig.json",
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: "module",
   },
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: "detect",
+    },
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ["react"],
   // globals: {
   //   Atomics: 'readonly',
   //   SharedArrayBuffer: 'readonly'
   // },
   rules: {
-    '@typescript-eslint/restrict-template-expressions': 0, // Turning this off for now.
-    '@typescript-eslint/strict-boolean-expressions': 0, // Turning this off for now.
-    'react/prop-types': 0, // will be generating proptypes from typescript
-  }
-}
+    "@typescript-eslint/restrict-template-expressions": 0, // Turning this off for now.
+    "@typescript-eslint/strict-boolean-expressions": 0, // Turning this off for now.
+    "react/prop-types": 0, // will be generating proptypes from typescript
+  },
+};
